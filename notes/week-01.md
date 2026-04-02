@@ -34,3 +34,40 @@ Logical operators are also same as java
 Functions in JS
 To write a simple functionn we need like this 
 function  name(variable){//body } 
+
+
+## Day 3 — Arrays & Loops
+
+### Arrays
+- Arrays in JS are like ArrayList in Java
+- Index starts at 0
+- fruits[0] → first item
+- fruits.length → total count
+
+### Add / Remove
+- fruits.push("item")  → adds to end
+- fruits.pop()         → removes from end
+
+### Loops
+- for loop       → same as Java, use when you need index
+- for...of loop  → gives you the VALUE directly (use this more)
+- for...in loop  → gives you the INDEX (don't use on arrays)
+
+### Array Methods (the important ones)
+- filter → keeps items that pass a condition, returns new array
+- map    → transforms every item, returns new array
+- reduce → collapses array into one value (sum, total, etc.)
+
+### The pattern
+array.method(item => what to do with item)
+- item is just a name you choose (m, n, x — anything)
+
+### Math.max tip
+- Math.max(...array) → spread operator (...) unpacks the array
+- Math.max(82,45,91) works, but Math.max(array) doesn't
+- ... is what makes it work
+
+### Common mistakes
+- for...in on arrays gives index not value — use for...of
+- pop() removes last item — doesnt take an argument
+- filter/map dont change original array, they return a new one
