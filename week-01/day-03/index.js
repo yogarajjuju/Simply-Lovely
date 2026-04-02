@@ -15,7 +15,7 @@ for(let i =0; i<fruits.length;i++){
 
 }
 // in js we have for each lile loop 
- for(let fruit in fruits){
+ for(let fruit of fruits){
     console.log(fruit.toUpperCase());
  }
  // Array Methods in js 
